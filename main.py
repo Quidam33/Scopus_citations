@@ -2,7 +2,7 @@ from pybliometrics.scopus import AbstractRetrieval
 import networkx as nx
 from pymongo import MongoClient
 
-client = MongoClient("mongodb+srv://new_user:1234@scopusdb.c3tpx.mongodb.net/scopus_v4?retryWrites=true&w=majority")
+client = MongoClient("connection_string")
 db = client.scopus_v4
 article_collection = db.scopus_articles
 G = nx.DiGraph()
